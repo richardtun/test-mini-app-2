@@ -56,7 +56,7 @@
             // Trạng thái Game Over
             message.textContent = 'COMPLETED! You clicked 5 times.';
             clickButton.classList.add('opacity-50', 'cursor-not-allowed', 'bg-red-500');
-            clickButton.classList.remove('bg-green-500', 'hover:bg-green-600');
+            clickButton.classList.remove('bg-green-500', 'hover:bg-green-500');
             clickButton.disabled = true;
             clickButton.textContent = 'Completed goal!';
             resetButton.classList.remove('hidden');
@@ -65,13 +65,13 @@
             message.textContent = `You clicked ${clickCount} times. Let's try!`;
             clickButton.textContent = `Click here (${clickCount} / ${MAX_CLICKS})`;
             clickButton.classList.remove('bg-red-500');
-            clickButton.classList.add('bg-green-500', 'hover:bg-green-600');
+            clickButton.classList.add('bg-green-500', 'hover:bg-green-500');
         } else {
             // Trạng thái ban đầu
             message.textContent = 'Begin click!';
             clickButton.textContent = `Click here (0 / ${MAX_CLICKS})`;
             clickButton.classList.remove('opacity-50', 'cursor-not-allowed', 'bg-red-500');
-            clickButton.classList.add('bg-green-500', 'hover:bg-green-600');
+            clickButton.classList.add('bg-green-500', 'hover:bg-green-500');
             clickButton.disabled = false;
         }
     }
@@ -99,5 +99,6 @@
     });
 </script>
 </html>
+
 
 
